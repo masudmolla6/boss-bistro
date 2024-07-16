@@ -1,10 +1,10 @@
-import React from 'react';
-import { FaAd, FaBook, FaCalendar, FaEnvelope, FaFileContract, FaHome, FaList, FaSearch, FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaAd, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from 'react-router-dom';
+import useAdmin from '../Hooks/useAdmin';
 
 const Dashboard = () => {
   // ToDo:Get isAdmin Value From The Database.
-  const isAdmin = true;
+  const [isAdmin] = useAdmin();
 
     return (
       <div className="flex w-full">
